@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoKut - Mobil Ngangkut</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <section class="header">
+          <h1>MoKut</h1>
+        </section>
+        <section class="main-content">
+          <div class="content">
+            <p class="label">Task :</p>
+            <input type="text" name="" id="searchRoute" />
+            <div class="display-popup hidden" id="displayPopup">
+              <button id="routeOne">Route 1</button>
+              <button id="routeTwo">Route 2</button>
+              <button id="routeThree">Route 3</button>
+            </div>
+            <ul id="dataRoute">
+              <li id="route1"></li>
+              <li id="route2"></li>
+              <li id="route3"></li>
+            </ul>
+            <button class="use" onclick="sendData(1)">Use Robot</button>
+            <button class="reset" onclick="sendData(0)">Reset Robot</button>
+          </div>
+        </section>
+        <section class="bottom-bar"></section>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
